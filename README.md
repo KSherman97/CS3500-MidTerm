@@ -23,3 +23,10 @@ Due Sunday, 13th of October, 2019
 	- HTML5
 	- CSS 3 and Bootstrap Framework
 	- JavaScript or JQuery
+
+## Basic Requirements
+The project must have at least 5 pages
+1. index.html - which will represent the home page or the landing page of the project. This page must contain a navigation menu which will help users to navigate through the website.
+2. about.html - this page needs to contain the group member names, project team number, and a description of what your project is about. This page will serve as the midterm report
+3. catalog.html - list items (ex: products, events) with their respective details
+4 & 5. Create at least two other pages with content of your own choosing, which should be relevant to your project topic
