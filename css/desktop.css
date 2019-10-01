@@ -3,18 +3,24 @@ html {
     background-image: url("../images/background.jpg");
     background-size: cover;                      /* <------ */
     background-repeat:   no-repeat;
+
+    background-position: center;
+
 	min-height: 100%;
-	width: auto;
+	min-width: 100%;
+	max-width: 100%;
+	max-height: 100;
 }
 
 #titleBar {
     color: #722f37;
     font-family: Lobster, cursive;
     font-size: 300%;
-    height: 50px;
+    height: 55px;
     width: 100%;
     text-align: center;
 	text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 #nav {
@@ -22,17 +28,18 @@ html {
     width: 100%;
     position: fixed;
     z-index: 1;
-    top: 60px;
+    top: 55px;
     left: 0;
     overflow: hidden;
     padding-top: 0px;
     text-align: center;
-    border-top-color: #722f37;
+/*    border-top-color: #722f37;
     border-top: 3px dotted;
     border-bottom-color: #722f37;
-    border-bottom: 3px dotted;
+    border-bottom: 3px dotted;*/
     vertical-align: middle;
     font-size: 25px;
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 #nav a {
@@ -52,10 +59,16 @@ html {
 #footerBar{
 	color: #722F37;
 	font-weight: bold;
-	bottom: 2%;
+	bottom: 0%;
 	text-align: center;
 	position: fixed;
 	width: 100%;
-	height: auto;
+	height: 5%;
 	text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+#footerBar p {
+	position: relative;
+	padding-top: 1%;
 }
