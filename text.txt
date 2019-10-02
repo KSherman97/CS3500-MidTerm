@@ -1,0 +1,37 @@
+
+<p>For all general inquiries, feel free to call our office at 123-456-7890.</p>
+
+
+
+<p>G1 Winery is located in [city, state]</p>
+
+[insert google maps here: https://www.embedgooglemap.net/ ]
+
+
+<form method="get" action="http://www.randyconnolly.com/tests/process.php">
+  <fieldset>
+     <legend>Contact Form</legend>
+     <p>
+       <label>Name: </label><br/>
+	   <input type="text" name="name" />
+     </p>
+    
+     <p>
+       <label>Email: </label><br/>
+		<input type="email" name="email" size="45"/>
+     </p>      
+     <p>
+       <label>Reason for Contact: </label><br/>
+		<textarea placeholder="enter text here" rows="5"
+		cols="45"></textarea>
+     </p>     
+
+<p>
+<label>Would you like to subscribe to our newsletter? </label><br/>
+<input type="radio" name="yes" value="1">Yes <input type="radio" name="no" value="2">No<br/>
+</p>   
+     <input type="submit" />
+  </fieldset>
+</form>
+</body>
+</html>
