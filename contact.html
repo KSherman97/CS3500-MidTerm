@@ -1,66 +1,78 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/desktop.css">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" shrink-to-fit="no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script></head>
 	<title>G1 Vineyard | Contact Us</title>
-</head>
-
 <body>
-	<div id="titleBar">
-		<h1>G1 Vineyard</h1>
-	</div>
-	<div id="nav">
-	  <a href="index.html">Home</a> |
-		<a href="#">About</a> |
-		<a href="#">Catalog</a> |
-		<a href="#">Visit Us</a> |
-	  	<a href="contact.html">Contact Us</a>
-	</div>
-
-	<div class="navbar navbar-default">
+	<nav class="navbar navbar-default">
 		<div class="container-fluid">
+            <div class="row">
 			<div class="navbar-header">
-				<a href="index.html" style="font-family: Lobster, cursive; color: #722f37;">G1 Vineyard</a>
-			</div>
+				<a class="navbar-brand" href="index.html" style="font-family: Lobster, cursive; color: #722f37;">G1 Vineyard</a>
+            </div>
 			<ul class="nav navbar-nav">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Catalog</a></li>
-				<li><a href="#">Visit Us</a></li>
-				<li class="active"><a href="contact.html">Contact Us</a></li>
-			</ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="catalog.html">Catalog</a></li>
+					<li><a href="visit.html">Visit Us</a></li>
+					<li class="active"><a href="contact.html">Contact Us</a></li>
+            </ul>
+            </div>
 		</div>
+	</nav>
 
-	</div>
-
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				test
-			</div>
-		</div>
-	</div>
-
-	<div id="content">
-		<form>
-			<input type="text" placeholder="First Name..." style="margin: 10px"><br>
-			<input type="text" placeholder="Last Name..." style="margin: 10px"><br>
-			<input type="email" placeholder="email@domain.com" style="margin: 10px"><br>
-			<textarea style="margin: 10px">Leave your comment here</textarea> <br>
-			<input type="submit" style="margin: 10px">
-		</form>
+        <div class="container" style="background-color: white;">
+            <div class="row">
+                <div class="col-sm-2">
+                </div>
+                <div class="col-sm-8 justify-content-center main-content">
+                    <form class="form-horizontal">
+						<h1 style="text-align: center">Leave us feedback</h1>
+                        <div class="form-group">
+                            <label for="firstName" class="control-label col-sm-2">First Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="fname" placeholder="John"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName" class="control-label col-sm-2">Last Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="lname" placeholder="Doe"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="control-label col-sm-2">Email Address</label>
+                            <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="email" placeholder="john.doe@mail.com"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1" class="control-label col-sm-2">Leave Feedback</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="leave feedback..."></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group"> 
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-default">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    <div class="fixed-bottom">
+        <footer class="page-footer font-small blue">
+            <div class="footer-copyright text-center py-3">
+                    <em>G1 Vinyard &copy; 2019</em>
+            </div>
+        </footer>
     </div>
-	<div id="footerBar">
-	  <p><em>G1 Vinyard &copy; 2019</em></p>
-	</div>
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
+	</body>
 </html>
