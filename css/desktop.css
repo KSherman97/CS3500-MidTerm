@@ -20,10 +20,11 @@ html {
     width: 100%;
     text-align: center;
 	text-shadow: 0 0 3px #000000, 0 0 5px #000000;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.6);
 }
 
 #nav {
+  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
     height: 30px;
     width: 100%;
     position: fixed;
@@ -39,7 +40,7 @@ html {
     border-bottom: 3px dotted;*/
     vertical-align: middle;
     font-size: 25px;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.6);
 }
 
 #nav a {
