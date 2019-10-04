@@ -28,7 +28,7 @@ body {
 
 .fixed-bottom {
     bottom: 0px;
-    position: absolute;
+    position: fixed;
     width: 100%;
     background-color: #F8F8F8;
 }
