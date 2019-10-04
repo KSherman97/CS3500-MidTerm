@@ -9,6 +9,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <title>G1 Vineyard | Contact Us</title>
+
+    <script>
+
+        function sent(){
+            var fname = document.getElementById("fname").value;
+            var email = document.getElementById("email").value;
+
+            alert("thank you, " + fname + "." + "\n" +
+            "A confirmation email has been sent to " + email + ".");
+            return false;
+        }
+    </script>
 </head>
 <body>
 	<nav class="navbar navbar-default">
@@ -33,7 +45,7 @@
                 <div class="col-sm-2">
                 </div>
                 <div class="col-sm-8 justify-content-center main-content">
-                    <form class="form-horizontal">
+                    <form class="form-horizontal" onsubmit="return sent()">
 						<h1 style="text-align: center">Leave us feedback</h1>
                         <div class="form-group">
                             <label for="firstName" class="control-label col-sm-2">First Name</label>
