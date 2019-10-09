@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>H1 Vineyard - Home</title>
+  <title>G1 Vineyard - Home</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -23,10 +23,25 @@
   <link href="css/main.css" rel="stylesheet">
   <link href="css/grayscale.min.css" rel="stylesheet">
 
+  <script>
 
+  function random() {
+    var textArray = [
+    'Step on through the grapevine',
+    'Welcome to heaven on Earth',
+    ];
+    var num = Math.floor(Math.random()*textArray.length);
+
+    greeting = document.getElementById("greeting").innerHTML;
+
+    document.getElementsByTagName("h2")[0].innerHTML = textArray[num];
+
+    greeting = string;
+  }
+  </script>
 </head>
 
-<body id="page-top">
+<body id="page-top" onload="random()">
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -60,8 +75,7 @@
     <div class="container d-flex h-100 align-items-center">
       <div class="mx-auto text-center">
         <h1 class="mx-auto my-0 text-uppercase">G1 Vineyard</h1>
-        <h2 class="text-white-50 mx-auto mt-2 mb-5">A family-owned and operated business. Offering highest quality wine since 1958. From our vineyards to your table, we are committed to consistently delivering world-class wines, sustainably and responsibly.
-        </h2>
+        <h2 class="text-white-50 mx-auto mt-2 mb-5" id="greeting">Step on through the grapevine</h2>
         <a href="catalog.html" class="btn btn-primary js-scroll-trigger">see our catalog</a>
       </div>
     </div>
