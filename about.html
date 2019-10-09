@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 <head>
     <!-- Meta Elements -->
     <meta charset="utf-8">
@@ -9,125 +10,119 @@
     <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
 
     <!-- External Stylesheets -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <link href="css/grayscale.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
     <!-- JS and Jquery scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <!-- Other Elements -->
     <title>G1 Vineyard | About Us</title>
 </head>
+
 <body>
 
     <!-- Navigation -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="index.html" style="font-family: Lobster, cursive; color: #722f37;">G1 Vineyard</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <nav class=" navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" style="font-family: Lobster, cursive; color: white;">G1 Vineyard</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBar" aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item active"><a href="about.html" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="catalog.html" class="nav-link">Catalog</a></li>
-                    <li class="nav-item"><a href="visit.html" class="nav-link">Visit Us</a></li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+            <div class="collapse navbar-collapse" id="navBar">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catalog.html">Catalog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="visit.html">Visit Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
-	</nav>
+        </div>
+    </nav>
 
     <!-- Content -->
-        <div class="container" style="background-color: white;">
-            <div class="row">
-                <div class="col-sm-2">
-                </div>
-                <div class="col-sm-8 main-content">
-                        <h1 style="text-align: center">About Us</h1>
+    <div class="container" style="background-color: white;">
+        <div class="row">
+            <div class="col-sm-2">
+            </div>
+            <div class="col-sm-8 main-content">
+                <h1 style="text-align: center">About Us</h1>
 
-                        <hr style="color: black;">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <h4>CS3500 - Midterm | Fall 2019</h4>
-                            </div>
-                            <div class="col-sm-12">
-                                <p>We are group number 1<br />Kyle Sherman and Ayano Toth.</p>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <h4>Project Objective</h4>
-                            </div>
-                            <div class="col-sm-12">
-                              <p>This project covers basic HTML and CSS web design, and also utilizes Boostrap. The website is for a (fictitious) wine company that includes a catalog/online shop. The 5 HTML files are as follows:</p>
-                              Homepage (index page), about page (the current page), catalog page (product listing), visit us page, and a contact page.
-                                <p>The purpose of this project is to display fruitful knoweledge of various web technologies and frameworks
-                                    including, but not limited to:
-                                    <ul>
-                                        <li>HTML</li>
-                                        <li>CSS</li>
-                                        <li>Bootstrap Framework</li>
-                                        <li>JavaScript</li>
-                                    </ul>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <h4>Site specifications</h4>
-                            </div>
-                            <div class="col-sm-12">
-                                <p>Initially the website was all hand designed with CSS, however it was decided
-                                    that a more efficient way of developing a coherent and smooth flowing design would
-                                    be to utilize the bootstrap framework. This would allow us to ensure that the website would
-                                    be free-flowing and reactive to diferent screen sizes and viewports.
-                                    <br>
-                                    There were numerous other options for design frameworks - we did not pick bootstrap for any specific reason,
-                                    other than it is simple to hit the ground running and quick to prototype designs. Boostrap also allowed us
-                                    to quickly adapt new changes with minimal disruption to the rest of the site.
-                                    <br>
-                                    Unfortunately, because the site is not connected to a dedicated server, there is no way that we are aware of to
-                                    send emails from the website. As an alternative proof of concept, we have created a JavaScript alert box popup with
-                                    the first name and the email of the respective user as a confirmation.
-                                    <br><br>
-                                    All of the code can be found on <a href="https://github.com/KSherman97/CS3500-MidTerm" target="_blank">GitHub</a>.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                                <div class="col-sm-12">
-                                    <h4>Special Notes</h4>
-                                </div>
-                                <div class="col-sm-12">
-                                    <p>
-                                        All media contained on this site is property to their respective owners. We do not claim ownership over
-                                        and media items used. All images contained are royalty free and used under the <a href="https://www.copyright.gov/fair-use/more-info.html" target="_blank">Fair Use Act</a>.
-                                        Which specifies that we are free to use the respective media for educational purposes without intent to sell
-                                        or distribute for monetary gain AKA commercial use. We do not own the brand G1 Vineyard and do not intend to use said name
-                                        for any commercial purposes.
-                                    </p>
-                                </div>
-                            </div>
+                <hr style="color: black;">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h4>CS3500 - Midterm | Fall 2019</h4>
+                    </div>
+                    <div class="col-sm-12">
+                        <p>We are group number 1<br />Kyle Sherman and Ayano Toth.</p>
                     </div>
                 </div>
-                <div class="col-sm-2">
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h4>Project Objective</h4>
+                    </div>
+                    <div class="col-sm-12">
+                        <p>This project covers basic HTML and CSS web design, and also utilizes Boostrap. The website is for a (fictitious) wine company that includes a catalog/online shop. The 5 HTML files are as follows:</p>
+                        Homepage (index page), about page (the current page), catalog page (product listing), visit us page, and a contact page.
+                        <p>The purpose of this project is to display fruitful knoweledge of various web technologies and frameworks including, but not limited to:
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Bootstrap Framework</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h4>Site specifications</h4>
+                    </div>
+                    <div class="col-sm-12">
+                        <p>Initially the website was all hand designed with CSS, however it was decided that a more efficient way of developing a coherent and smooth flowing design would be to utilize the bootstrap framework. This would allow us to ensure
+                            that the website would be free-flowing and reactive to diferent screen sizes and viewports.
+                            <br> There were numerous other options for design frameworks - we did not pick bootstrap for any specific reason, other than it is simple to hit the ground running and quick to prototype designs. Boostrap also allowed us to
+                            quickly adapt new changes with minimal disruption to the rest of the site.
+                            <br> Unfortunately, because the site is not connected to a dedicated server, there is no way that we are aware of to send emails from the website. As an alternative proof of concept, we have created a JavaScript alert box popup
+                            with the first name and the email of the respective user as a confirmation.
+                            <br><br> All of the code can be found on <a href="https://github.com/KSherman97/CS3500-MidTerm" target="_blank">GitHub</a>.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h4>Special Notes</h4>
+                    </div>
+                    <div class="col-sm-12">
+                        <p>
+                            All media contained on this site is property to their respective owners. We do not claim ownership over and media items used. All images contained are royalty free and used under the <a href="https://www.copyright.gov/fair-use/more-info.html"
+                                target="_blank">Fair Use Act</a>. Which specifies that we are free to use the respective media for educational purposes without intent to sell or distribute for monetary gain AKA commercial use. We do not own the brand G1 Vineyard
+                            and do not intend to use said name for any commercial purposes.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <!-- Footer -->
-        <div class="fixed-bottom">
-            <footer class="page-footer font-small blue">
-                <div class="footer-copyright text-center py-3">
-                        <em>G1 Vinyard &copy; 2019</em>
-                </div>
-            </footer>
+        <div class="col-sm-2">
         </div>
-	</body>
+    </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small blue">
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+            <a href="index.html"> G1 Vineyard</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+</body>
+
 </html>
