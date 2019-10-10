@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 
-<head>
+  <head>
     <!-- Meta Elements -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" shrink-to-fit="no">
@@ -22,87 +22,87 @@
     <title>G1 Vineyard | Contact Us</title>
 
     <script>
-        function sent() {
-            var fname = document.getElementById("fname").value;
-            var email = document.getElementById("email").value;
+      function sent() {
+        var fname = document.getElementById("fname").value;
+        var email = document.getElementById("email").value;
 
-            alert("thank you, " + fname + "." + "\n" +
-                "A confirmation email has been sent to " + email + ".");
-            return false;
-        }
+        alert("thank you, " + fname + "." + "\n" +
+          "A confirmation email has been sent to " + email + ".");
+        return false;
+      }
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Navigation -->
     <nav class=" navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="index.html" style="font-family: Lobster, cursive; color: white;">G1 Vineyard</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBar" aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+      <div class="container">
+        <a class="navbar-brand" href="index.html" style="font-family: Lobster, cursive; color: white;">G1 Vineyard</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBar" aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navBar">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="catalog.html">Catalog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="visit.html">Visit Us</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="contact.html">Contact Us</a></li>
-                </ul>
-            </div>
+        <div class="collapse navbar-collapse" id="navBar">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="catalog.html">Catalog</a></li>
+            <li class="nav-item"><a class="nav-link" href="visit.html">Visit Us</a></li>
+            <li class="nav-item active"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <div class="container" style="background-color: white;">
-        <div class="row">
-            <div class="col-sm-2">
-            </div>
-            <div class="col-sm-8 justify-content-center main-content">
-                <form class="form-horizontal" onsubmit="return sent()">
-                    <h1 style="text-align: center">Leave us feedback</h1>
-                    <div class="form-group">
-                        <label for="firstName" class="control-label col-sm-2">First Name</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="fname" placeholder="John" />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="lastName" class="control-label col-sm-2">Last Name</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="lname" placeholder="Doe" />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="email" class="control-label col-sm-2">Email Address</label>
-                        <div class="col-sm-10">
-                            <input type="email" class="form-control" id="email" placeholder="john.doe@mail.com" />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlTextarea1" class="control-label col-sm-2">Leave Feedback</label>
-                        <div class="col-sm-10">
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="leave feedback..."></textarea>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-10">
-                            <button type="submit" class="btn btn-default">Submit</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
+      <div class="row">
+        <div class="col-sm-2">
         </div>
+        <div class="col-sm-8 justify-content-center">
+          <form class="form-horizontal" onsubmit="return sent()">
+            <h1 style="text-align: center">Leave us feedback</h1>
+            <div class="form-group">
+              <label for="firstName" class="control-label col-sm-2">First Name</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="fname" placeholder="John" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="lastName" class="control-label col-sm-2">Last Name</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="lname" placeholder="Doe" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email" class="control-label col-sm-2">Email Address</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="email" placeholder="john.doe@mail.com" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1" class="control-label col-sm-2">Leave Feedback</label>
+              <div class="col-sm-10">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="leave feedback..."></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
 
     <!-- Footer -->
     <footer class="page-footer font-small blue">
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2019 Copyright:
-            <a href="index.html"> G1 Vineyard</a>
-        </div>
-        <!-- Copyright -->
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2019 Copyright:
+        <a href="index.html"> G1 Vineyard</a>
+      </div>
+      <!-- Copyright -->
     </footer>
-</body>
+  </body>
 
 </html>
