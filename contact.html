@@ -20,27 +20,39 @@
 
     <!-- Other Elements -->
     <title>G1 Vineyard | Contact Us</title>
-
     <script>
-      function sent() {
-        var fname = document.getElementById("fname").value;
-        var email = document.getElementById("email").value;
-        var button = document.getElementById("submit");
-        //
-        // alert("thank you, " + fname + "." + "\n" +
-        //   "A confirmation email has been sent to " + email + ".");
-        // return false;
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+        window.addEventListener('click', function() {
+          var fname = document.getElementById("fname").value;
+          var email = document.getElementById("email").value;
+          var button = document.getElementById("submit");
+          var formCheck = document.getElementsByClassName('needs-validation');
+          var alert = document.getElementById("alert");
+          var alertText = document.getElementById("alertText");
 
-        var alert = document.getElementById("alert");
-        var alertText = document.getElementById("alertText");
-
-        if (alert.style.display === "none") {
-          alertText.innerHTML = 'Thanks for the feedback, ' + fname + '. An email has been sent to ' + email + '.';
-          alert.style.display = "block";
-          button.disabled = true;
-        }
-        return false;
-      }
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              } else {
+                event.preventDefault();
+                event.stopPropagation();
+                alertText.innerHTML = 'Thanks for the feedback, ' + fname + '. An email has been sent to ' + email + '.';
+                alert.style.display = "block";
+                button.disabled = true;
+              }
+              form.classList.add('was-validated');
+              return false;
+            }, false);
+          });
+        }, false);
+      })();
     </script>
   </head>
 
@@ -69,36 +81,55 @@
 
     <div class="container" style="background-color: white;">
       <div class="row">
-        <div class="col-sm-3"></div>
-        <div class="col-sm-6">
-          <form class="form-horizontal" onsubmit="return sent()">
-            <h1 style="text-align: center">Leave us feedback</h1>
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+          <form class="form-horizontal needs-validation" onsubmit="" novalidate>
+            <h1 style="text-align: center">Leave Us Feedback</h1>
             <hr>
             <div class="alert alert-success" role="alert" id="alert" style="display: none;">
               <p id="alertText"></p>
             </div>
-            <div class="form-group">
-              <label for="firstName" class="control-label col-sm-4">First Name</label>
-              <div class="col-sm-12">
-                <input type="text" class="form-control" id="fname" placeholder="John" />
+
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="firstName" class="control-label col-sm-4">First Name</label>
+                  <div class="col-sm-12">
+                    <input type="text" class="form-control" id="fname" placeholder="John" required />
+                    <div class="invalid-feedback">
+                      Please enter your first name.
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="form-group">
-              <label for="lastName" class="control-label col-sm-4">Last Name</label>
-              <div class="col-sm-12">
-                <input type="text" class="form-control" id="lname" placeholder="Doe" />
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="lastName" class="control-label col-sm-4">Last Name</label>
+                  <div class="col-sm-12">
+                    <input type="text" class="form-control" id="lname" placeholder="Doe" required />
+                    <div class="invalid-feedback">
+                      Please enter your last name.
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="form-group">
               <label for="email" class="control-label col-sm-4">Email Address</label>
               <div class="col-sm-12">
-                <input type="email" class="form-control" id="email" placeholder="john.doe@mail.com" />
+                <input type="email" class="form-control" id="email" placeholder="john.doe@mail.com" required />
+                <div class="invalid-feedback">
+                  Please enter your email.
+                </div>
               </div>
             </div>
             <div class="form-group">
               <label for="exampleFormControlTextarea1" class="control-label col-sm-4">Leave Feedback</label>
               <div class="col-sm-12">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="leave feedback..."></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="leave feedback..." required></textarea>
+                <div class="invalid-feedback">
+                  Feedback cannot be empty.
+                </div>
               </div>
             </div>
             <div class="form-group">
@@ -108,7 +139,7 @@
             </div>
           </form>
         </div>
-        <div class="col-sm-3"></div>
+        <div class="col-sm-2"></div>
       </div>
     </div>
 
