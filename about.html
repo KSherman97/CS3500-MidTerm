@@ -11,7 +11,7 @@
 
     <!-- External Stylesheets -->
     <link rel="stylesheet" href="css/main.css" type="text/css">
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet"> <!-- this is a library of awesome icons -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
     <!-- JS and Jquery scripts -->
@@ -24,7 +24,6 @@
   </head>
 
   <body>
-
     <!-- Navigation -->
     <nav class=" navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
       <div class="container">
@@ -33,6 +32,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
+        <!-- navbar links -->
         <div class="collapse navbar-collapse" id="navBar">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -48,20 +48,24 @@
     <!-- Content -->
     <div class="container" style="background-color: white;">
       <div class="row">
+
+        <!-- left margin container -->
         <div class="col-sm-2">
         </div>
+
+        <!-- main content container -->
         <div class="col-sm-8">
           <h1 style="text-align: center">Midterm Project - Group Number 1</h1>
           <h3 style="text-align: center">CS3500 Fall 2019</h3>
 
           <hr style="color: black;">
+
+          <!-- This row is the container for the developer cards -->
           <div class="row">
-            <div class="col-sm-12">
-              <h4></h4>
-            </div>
             <div class="col-sm-12">
               <h4 style="text-align: center">Meet the Authors</h4>
 
+              <!-- create a new row for the developer cards -->
               <div class="row">
 
                 <!-- Card number 1 -->
@@ -88,6 +92,7 @@
                   </div>
                 </div>
 
+                <!-- this is the dividing column between the cards -->
                 <div class="col-md-2 d-flex align-items-stretch">
                 </div>
 
@@ -114,65 +119,69 @@
                     </div>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>
-        </div>
+        </div> <!-- end of the container for the developer cards -->
 
-        <div class="row">
-          <div class="col-sm-12">
-            <h4>Project Objective</h4>
-          </div>
-          <div class="col-sm-12">
-            <p>This project covers basic HTML and CSS web design, and also utilizes Boostrap. The website is for a (fictitious) wine company that includes a catalog/online shop. The 5 HTML files are as follows:</p>
-            Homepage (index page), about page (the current page), catalog page (product listing), visit us page, and a contact page.
-            <p>The purpose of this project is to display fruitful knoweledge of various web technologies and frameworks including, but not limited to:
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Bootstrap Framework</li>
-                <li>JavaScript</li>
-              </ul>
-            </p>
-          </div>
-        </div>
+        <!-- Row for the project objective -->
+        <div class="container">
 
-        <div class="row">
-          <div class="col-sm-12">
-            <h4>Site specifications</h4>
+          <div class="row">
+            <div class="col-sm-12">
+              <h4>Project Objective</h4>
+            </div>
+            <div class="col-sm-12">
+              <p>This project covers basic HTML and CSS web design, and also utilizes Boostrap. The website is for a (fictitious) wine company that includes a catalog/online shop. The 5 HTML files are as follows:</p>
+              Homepage (index page), about page (the current page), catalog page (product listing), visit us page, and a contact page.
+              <p>The purpose of this project is to display fruitful knoweledge of various web technologies and frameworks including, but not limited to:
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Bootstrap Framework</li>
+                  <li>JavaScript</li>
+                </ul>
+              </p>
+            </div>
           </div>
-          <div class="col-sm-12">
-            <p>Initially the website was all hand designed with CSS, however it was decided that a more efficient way of developing a coherent and smooth flowing design would be to utilize the bootstrap framework. This would allow us to ensure
-              that the website would be free-flowing and reactive to diferent screen sizes and viewports.
-              <br> There were numerous other options for design frameworks - we did not pick bootstrap for any specific reason, other than it is simple to hit the ground running and quick to prototype designs. Boostrap also allowed us to
-              quickly adapt new changes with minimal disruption to the rest of the site.
-              <br> Unfortunately, because the site is not connected to a dedicated server, there is no way that we are aware of to send emails from the website. As an alternative proof of concept, we have created a JavaScript alert box popup
-              with the first name and the email of the respective user as a confirmation.
-              <br><br> All of the code can be found on <a href="https://github.com/KSherman97/CS3500-MidTerm" target="_blank">GitHub</a>.
-            </p>
-          </div>
-        </div>
 
-        <div class="row">
-          <div class="col-sm-12">
-            <h4>Special Notes</h4>
+          <div class="row">
+            <div class="col-sm-12">
+              <h4>Site specifications</h4>
+            </div>
+            <div class="col-sm-12">
+              <p>Initially the website was all hand designed with CSS, however it was decided that a more efficient way of developing a coherent and smooth flowing design would be to utilize the bootstrap framework. This would allow us to ensure
+                that the website would be free-flowing and reactive to diferent screen sizes and viewports.
+                <br> There were numerous other options for design frameworks - we did not pick bootstrap for any specific reason, other than it is simple to hit the ground running and quick to prototype designs. Boostrap also allowed us to
+                quickly adapt new changes with minimal disruption to the rest of the site.
+                <br> Unfortunately, because the site is not connected to a dedicated server, there is no way that we are aware of to send emails from the website. As an alternative proof of concept, we have created a JavaScript alert box popup
+                with the first name and the email of the respective user as a confirmation.
+                <br><br> All of the code can be found on <a href="https://github.com/KSherman97/CS3500-MidTerm" target="_blank">GitHub</a>.
+              </p>
+            </div>
           </div>
-          <div class="col-sm-12">
-            <p>
-              All media contained on this site is property to their respective owners. We do not claim ownership over and media items used. All images contained are royalty free and used under the <a
-                href="https://www.copyright.gov/fair-use/more-info.html" target="_blank">Fair Use Act</a>. Which specifies that we are free to use the respective media for educational purposes without intent to sell or distribute for monetary gain
-              AKA commercial use. We do not own the brand G1 Vineyard
-              and do not intend to use said name for any commercial purposes.
-            </p>
+
+          <div class="row">
+            <div class="col-sm-12">
+              <h4>Special Notes</h4>
+            </div>
+            <div class="col-sm-12">
+              <p>
+                All media contained on this site is property to their respective owners. We do not claim ownership over and media items used. All images contained are royalty free and used under the <a
+                  href="https://www.copyright.gov/fair-use/more-info.html" target="_blank">Fair Use Act</a>. Which specifies that we are free to use the respective media for educational purposes without intent to sell or distribute for monetary gain
+                AKA commercial use. We do not own the brand G1 Vineyard
+                and do not intend to use said name for any commercial purposes.
+              </p>
+            </div>
           </div>
         </div>
+        <!-- End of the main content container -->
+
       </div>
     </div>
-    <div class="col-sm-2">
-    </div>
-    </div>
-    </div>
+
+    <!-- right margin container -->
+    <div class="col-sm-2"></div>
 
     <!-- Footer -->
     <footer class="page-footer font-small blue">
