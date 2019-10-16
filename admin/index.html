@@ -55,29 +55,40 @@
 
         <!-- main content container -->
         <div class="col-sm-8">
-          <h1 style="text-align: center">Admin Dashboard</h1>
-          <h3 id="datum" style="text-align: center">
-            <script>
-              var datum = new Date();
-              var dd = datum.getDate();
-              var mm = datum.getMonth() + 1; //January is 0!
-              var yyyy = datum.getFullYear();
+          <div class="container">
+            <h1 style="text-align: center">Admin Dashboard</h1>
+            <h3 id="datum" style="text-align: center">
+              <script>
+                var datum = new Date();
+                var dd = datum.getDate();
+                var mm = datum.getMonth() + 1; //January is 0!
+                var yyyy = datum.getFullYear();
 
-              // var h = datum.getHours();
-              var m = datum.getMinutes();
-              var s = datum.getSeconds();
-              if (datum.getHours() >= 13) {
-                var h = datum.getHours() - 12;
-                var nu = (h + ':' + m + ':' + s + ' pm');
-              } else {
-                var h = datum.getHours();
-                var nu = (h + ':' + m + ':' + s + ' am');
-              }
+                // var h = datum.getHours();
+                var m = datum.getMinutes();
+                var s = datum.getSeconds();
+                if (datum.getHours() >= 13) {
+                  var h = datum.getHours() - 12;
+                  var nu = (h + ':' + m + ' pm');
+                } else {
+                  var h = datum.getHours();
+                  var nu = (h + ':' + m + ' am');
+                }
 
-              document.write(nu + ' | ' + dd + '/' + mm + '/' + yyyy);
-            </script>
-          </h3>
-          <hr class="spacer" />
+                minutes = datum.getMinutes().toString().length == 1 ? '0' + datum.getMinutes() : datum.getMinutes();
+                if (datum.getHours() >= 13) {
+                  hours = datum.getHours().toString().length == 1 ? '0' + datum.getHours() - 12 : datum.getHours() - 12;
+                } else {
+                  hours = datum.getHours().toString().length == 1 ? '0' + datum.getHours() : datum.getHours();
+                }
+                ampm = datum.getHours() >= 12 ? 'pm' : 'am';
+                months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+                days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+                document.write(days[datum.getDay()] + ' ' + months[datum.getMonth()] + ' ' + datum.getDate() + ' ' + datum.getFullYear() + ' | ' + hours + ':' + minutes + ' ' + ampm);
+              </script>
+            </h3>
+            <hr class="spacer" />
+          </div>
         </div>
       </div>
     </div>
