@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+
+  <head>
+    <!-- Meta Elements -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" shrink-to-fit="no">
+
+    <!-- Custom Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="../css/main.css" type="text/css">
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet"> <!-- this is a library of awesome icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- JS and Jquery scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Other Elements -->
+    <title>G1 Vineyard | Admin</title>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class=" navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html" style="font-family: Lobster, cursive; color: white;">G1 Vineyard</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBar" aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- navbar links -->
+        <div class="collapse navbar-collapse" id="navBar">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+            <li class="nav-item active"><a class="nav-link" href="../about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="../catalog.html">Catalog</a></li>
+            <li class="nav-item"><a class="nav-link" href="../visit.html">Visit Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="../contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container" style="background-color: white;">
+      <div class="row">
+
+        <!-- left margin container -->
+        <div class="col-sm-2">
+        </div>
+
+        <!-- main content container -->
+        <div class="col-sm-8">
+          <h1 style="text-align: center">Admin Dashboard</h1>
+          <h3 id="datum" style="text-align: center">
+            <script>
+              var datum = new Date();
+              var dd = datum.getDate();
+              var mm = datum.getMonth() + 1; //January is 0!
+              var yyyy = datum.getFullYear();
+
+              // var h = datum.getHours();
+              var m = datum.getMinutes();
+              var s = datum.getSeconds();
+              if (datum.getHours() >= 13) {
+                var h = datum.getHours() - 12;
+                var nu = (h + ':' + m + ':' + s + ' pm');
+              } else {
+                var h = datum.getHours();
+                var nu = (h + ':' + m + ':' + s + ' am');
+              }
+
+              document.write(nu + ' | ' + dd + '/' + mm + '/' + yyyy);
+            </script>
+          </h3>
+          <hr class="spacer" />
+        </div>
+      </div>
+    </div>
+
+    <!-- right margin container -->
+    <div class="col-sm-2"></div>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small blue">
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2019 Copyright:
+        <a href="index.html"> G1 Vineyard</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+  </body>
+
+</html>
